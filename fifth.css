@@ -1,0 +1,216 @@
+/* 導覽列 */
+html {
+    font-family: 微軟正黑體;
+}
+header {
+    background-color: #376C8A;
+    padding: 10px 0;
+    text-align: center;
+}
+.navlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navlist-logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+.navlist-logo img {
+    aspect-ratio: 1/1;
+    width: 70px;
+}
+.navlist-btn ul {
+    display: inline-block;
+    vertical-align: middle;
+    list-style-type: none;
+    padding: 0;
+    }
+    
+    .navlist-btn ul li {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    
+    .navlist-btn ul li a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    
+    .navlist-btn li a:hover {
+        background-color: #DEBCBC;
+    }
+    
+    /* banner */
+    .section-banner {
+        /* position: relative; */
+        height: 500px; 
+        background-image: url(bn.jpg);
+        background-size: cover;
+        /* width: 100%;  */
+    }
+    .section-banner .container {
+        height: 100%;
+        display: flex;
+        align-items: end;
+    }
+    /* 
+    .banner img {
+        width: 100%; 
+        height: 500px;
+        vertical-align: top;
+        object-fit: cover;  */
+    /* } */
+    .banner-slogan {
+        /* position: absolute;  */
+        /* top: 50%; 
+        left: 50%;  */
+        /* transform: translate(-50%,-50%);  */
+        color: #376C8A; 
+        left: 0;
+        bottom: 0;
+    }
+    
+    .banner-slogan h1 {
+        font-family: "Pacifico", sans-serif;
+        font-size: 48px;
+        line-height: 60px;
+        margin: 0;
+    }
+    
+    .banner-slogan h1:last-child {
+        font-size: 40px; 
+    }
+    /* 師資介紹 */
+    .section-teacherintro h2 {
+        font-size: 24px;
+        color: #333333;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+    }
+    .section-teacherintro h3 {
+        font-size: 20px;
+        color: #333333;
+        font-weight: bold;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .subject-btn button {
+        background-color: #376C8A;
+        text-align: center;
+        color: #FFFFFF;
+        width: 70px;
+        border: none;
+        padding: 10px;
+    }
+    .subject-btn button:hover {
+        background-color: #DEBCBC;
+    }
+    .section-teacherintro .teacher {
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        /* 水平置中 */
+        justify-content: center;    
+        /* 垂直置中 */
+        align-content: center;      
+        flex-wrap: wrap;  
+    }
+    .teacher img {
+        width: 200px;
+        margin: 10px;
+    }
+    .teacher-amy, .teacher-rick, .teacher-carol, .teacher-zoe, .teacher-kelly {
+        /* border: #333333 solid 2px; */
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+    }
+    .amy-intro,.rick-intro, .zoe-intro, .kelly-intro, .carol-intro {
+        width: 500px;
+        padding-top: 40px;
+        line-height:20px;
+    }
+/* footer */
+.section-footer {
+    background-color: #376C8A;
+    color: #FFFFFF;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .nav-list li a{
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  .nav-list li {
+   display: inline-block;
+   margin: 20px;
+   padding: 10px;
+  }
+  .school-info p {
+    line-height: 30px;
+  }
+  /* 側邊按鈕 */
+  .dm-btm {
+    background-color:#58656E;
+    padding: 5px;
+  }
+  .dm-icon a, .reserve-icon a {
+    text-decoration: none;
+    color: white;
+  }
+  .reserve-btm {
+    background-color:#FD6C3C;
+    padding: 5px;
+  }
+  /* 視窗滾動 */
+  .floating-buttons {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .dm-btm, .reserve-btm {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .dm-btm {
+    background-color: #58656E;
+  }
+  
+  .reserve-btm {
+    background-color: #FD6C3C;
+  }
+  
+  .dm-icon, .reserve-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  
+  .dm-icon img, .reserve-icon img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+  }

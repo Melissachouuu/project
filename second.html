@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最新消息</title>
+    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="second.css">
+    <!-- css -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- google font -->
+    <!-- 輪播插件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- 導覽列 -->
+    <header>
+        <nav class="container">
+            <div class="navlist">
+                <div class="navlist-logo">
+                    <img src="logo-white.svg" alt="website logo">
+                </div>
+                <div class="navlist-btn">
+                    <ul>
+                        <li><a href="index.html">首頁</a></li>
+                        <li><a href="second.html">最新消息</a></li>
+                        <li><a href="third.html">線上DM</a></li>
+                        <li><a href="forth.html">課程介紹</a></li>
+                        <li><a href="fifth.html">師資介紹</a></li>
+                        <li><a href="sixth.html">聯絡我們</a></li>
+                        <li><a href="seventh.html">學生專區</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner -->
+    <section class="section-banner">
+        <!-- <div class="banner">
+            <img src="bnimg.jpg" alt="banner">
+        </div> -->
+        <div class="container">
+            <div class="banner-slogan">
+                    <h1>Dr. Cram School<br>達特補習班<br>用心教學，成就你的未來</h1>
+            </div>
+        </div>
+    </section>
+    <!-- 最新消息 -->
+    <section class="section-news">
+        <div class="container">
+            <h2>最新消息</h2>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <div class="news">
+                        <div class="number">
+                            <p>1</p>
+                        </div>
+                        <div class="news-txt">
+                            <h3>補習班消毒公告</h3>
+                            <p>為了讓學生有更好的學習環境，補習班將於2024.05.01進行環境消毒。非必要當天請不要進入補習班，謝謝!</p> <br>
+                            <p>2024.04.03</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-12">
+                    <div class="news">
+                        <div class="number">
+                            <p>2</p>
+                        </div>
+                        <div class="news-txt">
+                            <h3>網路系統更新</h3>
+                            <p>2024年4月1日，本補習班將進行網路系統更新，預計更新時間為1天。在此期間，網路服務將暫停，請學生與家長注意。</p> <br>
+                            <p>2024.03.29</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-12">
+                    <div class="news">
+                        <div class="number">
+                            <p>3</p>
+                        </div>
+                        <div class="news-txt">
+                            <h3>教室空調維修通知</h3>
+                            <p>敬愛的學生與家長們，請注意！由於本補習班教室空調需要進行維修，故本周五（2024.03.01）補習班將提早關閉。請學生盡早離開教室，以便進行維修工作。</p> <br>
+                            <p>2024.03.28</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 開班資訊 -->
+    <section class="new class">
+        <h2>開班資訊</h2>
+        <div class='swiper-top'>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="5.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="6.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-1"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    </section>
+    <!-- Swiper JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+        effect: 'coverflow',
+        slidesPerView: 1.5,
+        loop: true,
+        centeredSlides: true,
+        coverflowEffect: {
+            depth: 200,
+            rotate: 30,
+            stretch: 0,
+            slideShadows: false,
+  },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+  pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+  },
+});
+  </script>
+     <!-- 學生榮譽榜        -->
+     <section class="section-award">
+        <div class="container">
+            <h2>學生榮譽榜</h2>
+            <div class="row row-col-12">
+                <div class="col">
+                    <div class="award-img">
+                        <img src="5.jpg" alt="award1">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="award-img">
+                        <img src="6.jpg" alt="award1">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="award-img">
+                        <img src="7.jpg" alt="award1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="container section-footer">
+            <div class="nav-list">
+                <ul>
+                    <li><a href="#">首頁</a></li>
+                    <li><a href="#">最新消息</a></li>
+                    <li><a href="#">課程介紹</a></li>
+                    <li><a href="#">師資介紹</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                    <li><a href="#">學生專區</a></li>
+                </ul>
+            </div>
+            <div class="school-info">
+                <p>
+                    電話:(02)2297-6666 <br>
+                    信箱:happy@gmail.com <br>
+                    地址:台北市大安區大安路66號
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 旁邊浮動按紐 -->
+    <div class="floating-buttons">
+        <div class="dm-btm">
+            <div class="dm-icon">
+                <img src="dm.svg" alt="dm-icon">
+                <a href="#">線上DM</a>
+            </div>
+        </div>
+        <div class="reserve-btm">
+            <div class="reserve-icon">
+                <img src="phone.svg" alt="dm-icon">
+                <a href="#">預約試聽</a>
+            </div>
+        </div>
+      </div>
+      <script>
+        // 檢查滾動位置並顯示/隱藏浮動按鈕
+       // 檢查滾動位置並顯示/隱藏浮動按鈕
+        window.addEventListener('scroll', function() {
+            var banner = document.querySelector('.section-banner');
+            var footer = document.querySelector('footer');
+            var floatingButtons = document.querySelector('.floating-buttons');
+
+            var bannerBottom = banner.getBoundingClientRect().bottom;
+            var footerTop = footer.getBoundingClientRect().top;
+
+            if (bannerBottom <= window.innerHeight * 0.5 && footerTop >= window.innerHeight) {
+                floatingButtons.style.opacity = '1';
+                floatingButtons.style.pointerEvents = 'auto';
+            } else {
+                floatingButtons.style.opacity = '0';
+                floatingButtons.style.pointerEvents = 'none';
+            }
+        });
+        </script>
+</body>
+</html>

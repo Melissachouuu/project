@@ -1,0 +1,354 @@
+/* 導覽列 */
+html {
+    font-family: 微軟正黑體;
+}
+header {
+    background-color: rgb(247, 247, 247);
+    padding: 10px 0;
+    text-align: center;
+}
+.navlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navlist-logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navlist-btn ul {
+    display: inline-block;
+    vertical-align: middle;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navlist-btn ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navlist-btn ul li a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+.navlist-btn li a:hover {
+    background-color: orange;
+}
+
+/* banner */
+.section-banner {
+    /* position: relative; */
+    height: 500px; 
+    background-image: url(bn.jpg);
+    background-size: cover;
+    /* width: 100%;  */
+}
+.section-banner .container {
+    height: 100%;
+    display: flex;
+    align-items: end;
+}
+/* 
+.banner img {
+    width: 100%; 
+    height: 500px;
+    vertical-align: top;
+    object-fit: cover;  */
+/* } */
+.banner-slogan {
+    /* position: absolute;  */
+    /* top: 50%; 
+    left: 50%;  */
+    /* transform: translate(-50%,-50%);  */
+    color: #376C8A; 
+    left: 0;
+    bottom: 0;
+}
+
+.banner-slogan h1 {
+    font-family: "Pacifico", sans-serif;
+    font-size: 48px;
+    line-height: 60px;
+    margin: 0;
+}
+
+.banner-slogan h1:last-child {
+    font-size: 40px; 
+}
+/* 課程介紹 */
+.section-course h2 {
+    size:28px;
+    color: #333333;
+    text-align: center;
+    padding: 20px;
+    font-weight: bolder;
+}
+/* 按鈕 */
+.section-course .course-btn{
+    text-align: center;
+}
+.section-course button {
+    background-color: orange;
+    border: none;
+    width:70px;
+    border-radius: 30px;
+}
+/* 課程卡片 */
+.course-card {
+    transform: translate(150px);  
+}
+.container-course img {
+    aspect-ratio: 16 / 9; 
+    width: 300px; 
+    object-fit: cover;
+    object-position: center;
+  }
+  .pre-english-card,.eliteA1-card,.eliteA2-card {
+    display: flex;
+    flex-direction: row;
+    border: #376C8A solid 2px;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 10px;
+    width: 900px;
+}
+/* 卡片內細節 */
+.pre-english-card .course-txt h3, .eliteA1-card .course-txt h3, .eliteA2-card .course-txt h3 {
+    size:22px;
+    color: #333333;
+    font-weight: bold;
+    padding-bottom: 3px;
+    transform: translate(20px);
+}
+.pre-english-card ul, .eliteA1-card ul, .eliteA2-card ul{
+    margin: 20px;
+    line-height: 1.5;
+    list-style-type: style dotted;;
+}
+.course-question {
+    text-align: center;
+    font-weight: bold;
+    size:20px;
+}
+/* 表單 */
+.section-consult {
+    border-radius: 30px;
+    background-color: #F7F7F7;
+    display:block;
+    cursor:pointer;
+    margin:30px;
+    width: 600px;
+    transform: translate(300px);
+}
+.section-consult {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .consult-list form .form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .consult-list form .form-row label {
+    margin-right: 10px;
+    width: 100px;
+    text-align: right;
+  }
+  
+  .consult-list form .form-row .radio-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .consult-list form .form-row .radio-group input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .consult-list form .form-row .radio-group input[type="text"] {
+    margin-left: 10px;
+  }
+  
+  .consult-list form .form-row.submit-btn {
+    justify-content: center;
+  }
+  
+  .consult-list form .form-row.submit-btn .styled {
+    width: 100px;
+  }
+  .section-consult h2 {
+    size: 20px;
+    color: #333333;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+  }
+/* footer */
+.section-footer {
+    background-color: #376C8A;
+    color: #FFFFFF;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+.nav-list li a{
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  .nav-list li {
+   display: inline-block;
+   margin: 20px;
+   padding: 10px;
+}
+.school-info p {
+    line-height: 30px;
+}
+/* 側邊按鈕 */
+.dm-btm {
+    background-color:#58656E;
+    padding: 5px;
+}
+.dm-icon a, .reserve-icon a {
+    text-decoration: none;
+    color: white;
+}
+.reserve-btm {
+    background-color:#FD6C3C;
+    padding: 5px;
+}
+/* 視窗滾動 */
+.floating-buttons {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .dm-btm, .reserve-btm {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .dm-btm {
+    background-color: #58656E;
+  }
+  
+  .reserve-btm {
+    background-color: #FD6C3C;
+  }
+  
+  .dm-icon, .reserve-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+  }
+  
+  .dm-icon img, .reserve-icon img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+/* footer */
+.section-footer {
+  background-color: #376C8A;
+  color: #FFFFFF;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.nav-list li a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.nav-list li {
+ display: inline-block;
+ margin: 20px;
+ padding: 10px;
+}
+.school-info p {
+  line-height: 30px;
+}
+/* 側邊按鈕 */
+.dm-btm {
+  background-color:#58656E;
+  padding: 5px;
+}
+.dm-icon a, .reserve-icon a {
+  text-decoration: none;
+  color: white;
+}
+.reserve-btm {
+  background-color:#FD6C3C;
+  padding: 5px;
+}
+/* 視窗滾動 */
+.floating-buttons {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.dm-btm, .reserve-btm {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dm-btm {
+  background-color: #58656E;
+}
+
+.reserve-btm {
+  background-color: #FD6C3C;
+}
+
+.dm-icon, .reserve-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.dm-icon img, .reserve-icon img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}

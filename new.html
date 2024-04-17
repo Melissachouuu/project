@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="grid.css">
+    <style>
+        .container {
+            max-width: 1440px;
+            display: flex;
+            justify-content: center; /* 水平置中 */
+            align-items: center; /* 垂直置中 */
+        }
+        /* 導覽列 */
+        header {
+            background-color: rgb(247, 247, 247);
+            width: 100%;
+            /* height: 75px; */
+            margin: 0 auto;
+        }
+        
+        .navlist-logo {
+            float: left;
+            padding: 0px;
+        }
+        
+        .navlist-btm ul {
+            color: rgb(51, 51, 51);
+            font-size: 20px;
+            display: inline;
+            float: right;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navlist-btm ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+        
+        .navlist-btm ul li a {
+            text-decoration: none;
+            color: rgb(51, 51, 51);
+        }
+        
+        .navlist-btm ul li a:hover {
+            background-color: orange;
+        }
+        /* banner */
+        .container {
+            position: relative;
+            max-width: 100%;
+            overflow: hidden;
+        }
+        .banner-background-img {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            display: block;
+            overflow: hidden;
+        }
+        .banner-background-img img {
+            width: 100%;
+            display: block;
+        }
+        .banner-txt {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: rgb(51, 51, 51) ;
+            z-index: 1;
+        }
+        .banner-img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+        .banner-txt {
+            color: rgb(55,108,138);
+            font-size: 25px acme;
+            display: inline-block;
+            vertical-align: middle;
+            text-align: left;
+        }
+        /* 關於我們 */
+        .ourservice {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        section-aboutus {
+            text-align: center;
+        }
+        .section-aboutus h1 {
+            margin-bottom: 20px; /* 加入底部間距 */
+        }
+        .card {
+            display: inline-block; /* 讓內容並排顯示 */
+            margin: 0 10px; /* 加入左右間距 */
+        }
+        .card img {
+            max-width: 100%; /* 確保圖片不會超出容器寬度 */
+            height: auto; /* 保持圖片比例 */
+        }
+    </style>
+</head>
+<body>
+    <!-- 首頁 -->
+    <!-- 導覽列 -->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="navlist-logo">
+                    <img src="logo.png" alt="website logo">
+                </div>
+                <div class="navlist-btm">
+                    <ul>
+                        <li>
+                            <a href="#">首頁</a>
+                        </li>
+                        <li>
+                            <a href="#">最新消息</a>
+                        </li>
+                        <li>
+                            <a href="#">線上DM</a>
+                        </li>
+                        <li>
+                            <a href="#">最新消息</a>
+                        </li>
+                        <li>
+                            <a href="#">課程介紹</a>
+                        </li>
+                        <li>
+                            <a href="#">師資介紹</a>
+                        </li>
+                        <li>
+                            <a href="#">聯絡我們</a>
+                        </li>
+                        <li>
+                            <a href="#">學生專區</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner -->
+    <div class="container">
+        <div class="banner-background-img">
+            <img src="bnimg.jpg" alt="banner">
+        </div>
+        <!-- <div class="banner-img">
+            <img src="logo.png" alt="logo">
+        </div> -->
+        <div class="banner-txt">
+            <h1>
+                Dr. Cram School <br>
+                達特補習班 <br>
+                用心教學，成就你的未來
+            </h1>
+        </div>
+    </div>
+    <!-- 關於我們 -->
+    <div class="row">
+        <div class="class col-6 col-md-4 col-lg-3">
+            <div class="section-aboutus">
+                <h1>關於我們</h1>
+                <div class="card">
+                    <img src="aboutus.jpg" alt="about us">
+                </div>
+                <div class="card">
+                    <p>達特補習班成立於西元2000年。<br>
+                        注重學生邏輯思維的方式教學，拒絕填鴨式教育，在補習界深耕逾20年。<br>
+                        下一個20年，達特補習班將會持續提供最優質的教育品質和環境給每一位學員。<br>
+                        讓下一代能夠繼續享有良好的教育資源。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 我們提供的服務 -->
+    <div class="row">
+        <div class="class col-6 col-md-4 col-lg-3">
+            <div class="ourservice">
+                <h1>我們提供的服務</h1>
+                <div class="card-english">
+                    <img src="english.png" alt="icon">
+                    <p>英文<br>
+                        年級:國中、高中</p>
+                </div>
+                <div class="car-math">
+                    <div class="card-english">
+                        <img src="math.png" alt="icon">
+                        <p>數學<br>
+                            年級:國中、高中</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
