@@ -17,29 +17,30 @@ header {
     vertical-align: middle;
 }
 .navlist-logo img {
-  aspect-ratio: 1/1;
-  width: 70px;
+    aspect-ratio: 1/1;
+    width: 70px;
 }
 .navlist-btn ul {
     display: inline-block;
     vertical-align: middle;
     list-style-type: none;
     padding: 0;
-}
-
-.navlist-btn ul li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.navlist-btn ul li a {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.navlist-btn li a:hover {
-    background-color: #DEBCBC;
-}
+    }
+    
+    .navlist-btn ul li {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    
+    .navlist-btn ul li a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    
+    .navlist-btn li a:hover {
+        background-color: #DEBCBC;
+    }
+    
 
 /* banner */
 .section-banner {
@@ -54,13 +55,6 @@ header {
     display: flex;
     align-items: end;
 }
-/* 
-.banner img {
-    width: 100%; 
-    height: 500px;
-    vertical-align: top;
-    object-fit: cover;  */
-/* } */
 .banner-slogan {
     /* position: absolute;  */
     /* top: 50%; 
@@ -84,27 +78,25 @@ header {
 .section-dm h2 {
     color: #333333;
     font-size: 28px;
+    font-weight: bold;
     padding-top: 50px;
     padding-bottom: 20px;
     text-align: center;
 }
 .section-dm .grade-btm {
     text-align: center;
+    color: #f7f7f7;;
 }
 .section-dm button {
     border: none;
-    background-color:#FD6C3C;
-    border-radius: 30px;
+    background-color:#376C8A;
     margin: 10px;
-    font-size: 20px;
+    font-size: 15px;
     height: 50px;
 }
 .section-dm button:hover {
-    background-color: #D9D9D9;
-}
-.section-dm .dm-ju1,.section-dm .dm-ju2,.section-dm .dm-ju3 {
-    /* background-color: gray; */
-    margin-top: 10px;
+    background-color: #ccc;
+    cursor: pointer;
 }
 .section-dm .dm-ju1, .section-dm .dm-ju2, .section-dm .dm-ju3 {
     background-color: #58656E;
@@ -117,10 +109,10 @@ header {
     margin: auto;
 }
 .dm-ju1 p,.section-dm .dm-ju2 p,.section-dm .dm-ju3 p {
-    color: #D9D9D9;
+    text-color: #D9D9D9;
     text-align: center;
     vertical-align: middle;
-}
+} 
 /* footer */
 .section-footer {
     background-color: #376C8A;
@@ -148,15 +140,15 @@ header {
 .dm-btm {
     background-color:#58656E;
     padding: 5px;
-}
-.dm-icon a, .reserve-icon a {
+  }
+  .dm-icon a, .reserve-icon a {
     text-decoration: none;
     color: white;
-}
-.reserve-btm {
+  }
+  .reserve-btm {
     background-color:#FD6C3C;
     padding: 5px;
-}
+  }
 /* 視窗滾動 */
 .floating-buttons {
     position: fixed;
@@ -186,7 +178,7 @@ header {
   }
   
   .reserve-btm {
-    background-color: #FD6C3C;
+    background-color: #376C8A;
   }
   
   .dm-icon, .reserve-icon {
@@ -202,4 +194,45 @@ header {
     width: 30px;
     height: 30px;
     margin-bottom: 5px;
+  }
+
+/* 線上dm */
+.col {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .dm {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .grade-btm button {
+    color: #f7f7f7;
+    margin: 3px;
+    height: 35px;
+  }
+  .grade-btm button:hover {
+    background-color: #DEBCBC;
+  }
+  .dm-ju1,
+  .dm-ju2,
+  .dm-ju3 {
+    padding: 20px;
+  }
+  .dm:hover {
+    background-color: #ccc;
+    cursor: pointer;
+  }
+
+  .col .dm p{
+    color: #333333;
+    margin: 0;
+    line-height: 1.5;
   }

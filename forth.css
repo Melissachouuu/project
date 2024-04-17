@@ -80,7 +80,7 @@ header {
 }
 /* 課程介紹 */
 .section-course h2 {
-    size:28px;
+    font-size:24px;
     color: #333333;
     text-align: center;
     padding: 20px;
@@ -91,50 +91,61 @@ header {
     text-align: center;
 }
 .section-course button {
-    background-color: orange;
+    background-color: #376C8A;
     border: none;
     width:70px;
-    border-radius: 30px;
+    height: 40px;
+}
+.section-course button:hover {
+  background-color: #DEBCBC;
+  cursor: pointer;
+}
+.section-course button {
+  color: #F7F7F7;
 }
 /* 課程卡片 */
 .course-card {
-    transform: translate(150px);  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-course .img {
+  width: 280px;
 }
 .container-course img {
-    aspect-ratio: 16 / 9; 
-    width: 300px; 
-    object-fit: cover;
-    object-position: center;
-  }
-  .pre-english-card,.eliteA1-card,.eliteA2-card {
-    display: flex;
-    flex-direction: row;
-    border: #376C8A solid 2px;
-    border-radius: 30px;
-    margin: 10px;
-    padding: 10px;
-    width: 900px;
+    width: 100%; 
+    vertical-align: top;
+}
+.pre-english-card,.eliteA1-card,.eliteA2-card {
+  display: flex;
+  align-items: center;
+  border: #376C8A solid 2px;
+  border-radius: 30px;
+  margin: 10px;
+  max-width: 900px;
+  overflow: hidden;
 }
 /* 卡片內細節 */
+.course-txt {
+  padding: 10px 20px;
+}
 .pre-english-card .course-txt h3, .eliteA1-card .course-txt h3, .eliteA2-card .course-txt h3 {
-    size:22px;
+    font-size:22px;
     color: #333333;
     font-weight: bold;
     padding-bottom: 3px;
-    transform: translate(20px);
 }
 .pre-english-card ul, .eliteA1-card ul, .eliteA2-card ul{
-    margin: 20px;
-    line-height: 1.5;
-    list-style-type: style dotted;;
+    line-height: 25px;
+    list-style: circle inside;
 }
 .course-question {
     text-align: center;
     font-weight: bold;
-    size:20px;
+    font-size: 20px;
 }
 /* 表單 */
-.section-consult {
+/* .section-consult {
     border-radius: 30px;
     background-color: #F7F7F7;
     display:block;
@@ -187,7 +198,70 @@ header {
     font-weight: bold;
     text-align: center;
     margin: 10px;
-  }
+  } */
+  .section-consult {
+  border-radius: 30px;
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 30px;
+  width: 600px;
+  transform: translate(300px);
+}
+
+.consult-list form .form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.consult-list form .form-row:last-child {
+  justify-content: center;
+}
+.consult-list form .form-row label {
+  margin-right: 10px;
+  width: 100px;
+  text-align: right;
+}
+.consult-list .radio-group label:first-child {
+  text-align-last: right;
+  width: 100px;
+  margin-right: 10px;
+}
+.consult-list .radio-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.consult-list form .form-row .radio-group input[type="radio"] {
+  margin-right: 5px;
+}
+
+.consult-list form .form-row .radio-group input[type="text"] {
+  margin-left: 10px;
+}
+
+.consult-list form .form-row.submit-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.consult-list form .form-row.submit-btn .styled-submit {
+  width: 100px;
+}
+.consult-list form .form-row textarea {
+  resize: none;
+}
+
+.section-consult h2 {
+  font-size: 20px;
+  color: #333333;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+}
 /* footer */
 .section-footer {
     background-color: #376C8A;

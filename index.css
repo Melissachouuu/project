@@ -124,29 +124,41 @@
     font-weight: bold;
     text-align: center;
     padding: 20px;
-} 
+}
+.section-ourservice .ourservice {
+    gap: 20px;
+}
 .english {
+    height: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
     background-color: #376C8A;
     border-radius: 30px;
 }
 .english-img img {
-    width: 100px; 
+    height: 150px;
+    vertical-align: top; 
 }
 .english-txt p {
     font-size: 16px;
     color: #FFFFFF;
+    margin: 0 20px;
 }
 .math {
     display: flex;
     flex-direction: row;
     background-color:#F7F7F7;
     border-radius: 30px;
+    align-items: center;
+}
+.math img {
+    width: 100%;
 }
 .math-txt p {
     font-size: 16px;
     color: #333333;
+    margin: 0 20px;
 }
 .course-btn button {
     background-color: orange;

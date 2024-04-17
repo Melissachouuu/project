@@ -54,7 +54,7 @@
                 <button>英文</button>
                 <button>數學</button>
             </div>
-            <div class="course-card">
+            <div class="course-card row-col-12 row-col-md-12 col-lg-12">
                 <div class="col">
                     <div class="pre-english-card">
                         <div class="container-course">
@@ -73,7 +73,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="eliteA1-card">
+                    <div class="pre-english-card">
                         <div class="container-course">
                             <div class="img">
                                 <img src="preenglishcard.png" alt="course-img">
@@ -90,12 +90,12 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="eliteA2-card">
-                        <div class="img">
-                            <div class="container-course">
-                            <img src="preenglishcard.png" alt="course-img">
+                    <div class="pre-english-card">
+                        <div class="container-course">
+                            <div class="img">
+                                <img src="preenglishcard.png" alt="course-img">
+                            </div>
                         </div>
-                    </div>
                         <div class="course-txt">
                             <h3>英文菁英A2班</h3>
                             <ul>
@@ -115,50 +115,50 @@
     <!-- 表單 -->
     <div class="section-consult">
         <div class="container">
-          <h2>諮詢、報名表單</h2>
-          <div class="row">
-            <div class="col-12 col-md-12 col-lg-12">
-              <div class="consult-list">
-                <form action="#">
-                  <div class="form-row">
-                    <label for="name">學生姓名</label>
-                    <input type="text" name="Name">
-                  </div>
-                  <div class="form-row">
-                    <label for="text">就讀學校</label>
-                    <input type="text">
-                  </div>
-                  <div class="form-row">
-                    <label for="text">填寫人姓名</label>
-                    <input type="text" name="Name">
-                  </div>
-                  <label for="form-row">填寫人</label>
-                    <div class="radio-group">
-                      <input type="radio" id="學生本人" name="write" value="學生本人" checked />
-                      <label for="學生本人">學生本人</label>
-                      <input type="radio" id="學生家長" name="write" value="學生家長" />
-                      <label for="學生家長">學生家長</label>
+            <h2>諮詢、報名表單</h2>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <div class="consult-list">
+                        <form action="#">
+                            <div class="form-row">
+                                <label for="name">學生姓名</label>
+                                <input type="text" name="Name">
+                            </div>
+                            <div class="form-row">
+                                <label for="text">就讀學校</label>
+                                <input type="text">
+                            </div>
+                            <div class="form-row">
+                                <label for="text">填寫人姓名</label>
+                                <input type="text" name="Name">
+                            </div>
+                            <div class="radio-group">
+                                <label>填寫人</label>
+                                <input type="radio" id="學生本人" name="write" value="學生本人" checked />
+                                <label for="學生本人">學生本人</label>
+                                <input type="radio" id="學生家長" name="write" value="學生家長" />
+                                <label for="學生家長">學生家長</label>
+                            </div>
+                            <div class="form-row">
+                                <label for="連絡電話">聯絡電話<br>
+                                </label>
+                                <input type="tel" id="phone" name="連絡電話" pattern="\[0-9\]{4}-\[0-9\]{3}-\[0-9\]{3}" required />
+                            </div>
+                            <div class="form-row">
+                                <label for="name">詢問課程</label>
+                                <input type="text" name="詢問課程">
+                            </div>
+                            <div class="form-row">
+                                <label for="name">問題描述</label>
+                                <textarea name="" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="form-row">
+                                <input class="styled-submit" type="button" value="提交" />
+                            </div>
+                        </form>
                     </div>
-                  <div class="form-row">
-                    <label for="連絡電話">聯絡電話<br>
-                    </label>
-                    <input type="tel" id="phone" name="連絡電話" pattern="\[0-9\]{4}-\[0-9\]{3}-\[0-9\]{3}" required />
-                  </div>
-                  <div class="form-row">
-                    <label for="name">詢問課程</label>
-                    <input type="text" name="詢問課程">
-                  </div>
-                  <div class="form-row">
-                    <label for="name">問題描述</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                  </div>
-                  <div class="form-row">
-                    <input class="styled-submit" type="button" value="提交" />
-                  </div>
-                </form>
-              </div>
+                </div>
             </div>
-          </div>
         </div>
     </div>
     <!-- footer -->
@@ -166,12 +166,13 @@
         <div class="container section-footer">
             <div class="nav-list">
                 <ul>
-                    <li><a href="#">首頁</a></li>
-                    <li><a href="#">最新消息</a></li>
-                    <li><a href="#">課程介紹</a></li>
-                    <li><a href="#">師資介紹</a></li>
-                    <li><a href="#">聯絡我們</a></li>
-                    <li><a href="#">學生專區</a></li>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="second.html">最新消息</a></li>
+                    <li><a href="third.html">線上DM</a></li>
+                    <li><a href="forth.html">課程介紹</a></li>
+                    <li><a href="fifth.html">師資介紹</a></li>
+                    <li><a href="sixth.html">聯絡我們</a></li>
+                    <li><a href="seventh.html">學生專區</a></li>
                 </ul>
             </div>
             <div class="school-info">
@@ -189,13 +190,13 @@
         <div class="dm-btm">
             <div class="dm-icon">
                 <img src="dm.svg" alt="dm-icon">
-                <a href="#">線上DM</a>
+                <a href="third.html">線上DM</a>
             </div>
         </div>
         <div class="reserve-btm">
             <div class="reserve-icon">
                 <img src="phone.svg" alt="dm-icon">
-                <a href="#">預約試聽</a>
+                <a href="forth.html">預約試聽</a>
             </div>
         </div>
       </div>

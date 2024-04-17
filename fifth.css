@@ -96,6 +96,9 @@ header {
         text-align: center;
         padding-bottom: 10px;
     }
+    .subject-btn {
+        text-align: center;
+    }
     .subject-btn button {
         background-color: #376C8A;
         text-align: center;
@@ -107,6 +110,7 @@ header {
     .subject-btn button:hover {
         background-color: #DEBCBC;
     }
+   
     .section-teacherintro .teacher {
         display: flex;
         flex-direction: column;

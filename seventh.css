@@ -1,0 +1,184 @@
+/* 導覽列 */
+html {
+    font-family: 微軟正黑體;
+}
+header {
+    background-color: #376C8A;
+    padding: 10px 0;
+    text-align: center;
+}
+.navlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navlist-logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+.navlist-logo img {
+    aspect-ratio: 1/1;
+    width: 70px;
+}
+.navlist-btn ul {
+    display: inline-block;
+    vertical-align: middle;
+    list-style-type: none;
+    padding: 0;
+    }
+    
+    .navlist-btn ul li {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    
+    .navlist-btn ul li a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    
+    .navlist-btn li a:hover {
+        background-color: #DEBCBC;
+    }
+    
+    /* banner */
+    .section-banner {
+        /* position: relative; */
+        height: 500px; 
+        background-image: url(bn.jpg);
+        background-size: cover;
+        /* width: 100%;  */
+    }
+    .section-banner .container {
+        height: 100%;
+        display: flex;
+        align-items: end;
+    }
+    /* 
+    .banner img {
+        width: 100%; 
+        height: 500px;
+        vertical-align: top;
+        object-fit: cover;  */
+    /* } */
+    .banner-slogan {
+        /* position: absolute;  */
+        /* top: 50%; 
+        left: 50%;  */
+        /* transform: translate(-50%,-50%);  */
+        color: #376C8A; 
+        left: 0;
+        bottom: 0;
+    }
+    
+    .banner-slogan h1 {
+        font-family: "Pacifico", sans-serif;
+        font-size: 48px;
+        line-height: 60px;
+        margin: 0;
+    }
+    
+    .banner-slogan h1:last-child {
+        font-size: 40px; 
+    }
+    /* 登入 */
+    /* .login-account, .login-password {
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .section-login h2 {
+        font-style: 24px;
+        font-weight: bold;
+        color: #333333;
+        text-align: center;
+        padding: 20px;
+    }
+    .login-account,
+    .login-password {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+    .login-account label,
+    .login-password label {
+      margin-bottom: 0.5rem;
+    }
+    
+    .login-account input,
+    .login-password input {
+      text-align: center;
+    }
+      
+    .section-login .row {
+        justify-content: center;
+      }
+    .login-account, .login-password {
+        display: flex;
+        flex-direction: row;
+    }
+    .section-login .row {
+        justify-content: center;
+      } */
+      .section-login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 100vh; */
+      }
+      
+      .login-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .login-account,
+      .login-password {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+      
+      .login-account label,
+      .login-password label {
+        margin-right: 0.5rem;
+        font-weight: bold;
+      }
+      
+      .login-account input,
+      .login-password input {
+        text-align: center;
+      }
+      
+      .section-login h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333333;
+        padding: 20px;
+      }
+    /* footer */
+.section-footer {
+    background-color: #376C8A;
+    width: 100%;
+    color: #FFFFFF;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .nav-list li a{
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  .nav-list li {
+   display: inline-block;
+   margin: 20px;
+   padding: 10px;
+  }
+  .school-info p {
+    line-height: 30px;
+  }
