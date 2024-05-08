@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+.news-container {
+  width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.news-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.news-header h2 {
+  margin-right: 20px;
+}
+
+.cloud-icon img,
+.line-icon img {
+  height: 30px;
+}
+
+.news-list {
+  height: 600px;
+  overflow-y: scroll;
+}
+
+.news-item {
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-item h3 {
+  margin-top: 0;
+}
+
+.truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.view-details {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: auto;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.news-details-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.news-details {
+  background-color: white;
+  padding: 20px;
+  max-width: 600px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+  <div class="news-container">
+    <div class="news-header">
+      <h2>最新消息</h2>
+      <div class="cloud-icon">
+        <img src="../graph.png" alt="Cloud Icon">
+      </div>
+      <div class="line-icon">
+        <img src="line.png" alt="Line Icon">
+      </div>
+    </div>
+    <div class="news-list">
+      <div class="news-item">
+        <h3>職業翻身新近</h3>
+        <p class="truncate">職業表給即將來臨,跟莉這裡可愛的孩子,已經準備踏上人生新的旅程+著看他們天真無邪的笑容,房麵裡到未來的模給即將來臨,跟莉這裡可愛的孩子,已經準備踏上人生新的旅程+著看他們天真無邪的笑容,房麵裡到未來的模給即將來臨,跟莉這裡可愛的孩子,已經準備踏上人生新的旅程+著看他們天真無邪的笑容,房麵裡到未來的模給即將來臨,跟莉這裡可愛的孩子,已經準備踏上人生新的旅程+著看他們天真無邪的笑容,房麵裡到未來的模給即將來臨,跟莉這裡可愛的孩子,已經準備踏上人生新的旅程+著看他們天真無邪的笑容,房麵裡到未來的模給即將來臨,跟莉這裡可愛的孩子,已經準備踏上人生新的旅程+著看他們天真無邪的笑容,房麵裡到未來的模子…</p>
+        <p>APR 10 2024 </p>
+        <button class="view-details">View Details</button>
+      </div>
+      <div class="news-item">
+        <h3>職業翻身新近</h3>
+        <p class="truncate">職業表給即將來臨,跟莉這裡可愛的孩子,已經準備踏上人生新的旅程+著看他們天真無邪的笑容,房麵裡到未來的模給即將來臨,跟莉這裡可愛的孩子,已經準備踏上人生新的旅程+著看他們天真無邪的笑容,房麵裡到未來的模給即將來臨,跟莉這裡可愛的孩子,已經準備踏上人生新的旅程+著看他們天真無邪的笑容,房麵裡到未來的模給即將來臨,跟莉這裡可愛的孩子,已經準備踏上人生新的旅程+著看他們天真無邪的笑容,房麵裡到未來的模給即將來臨,跟莉這裡可愛的孩子,已經準備踏上人生新的旅程+著看他們天真無邪的笑容,房麵裡到未來的模給即將來臨,跟莉這裡可愛的孩子,已經準備踏上人生新的旅程+著看他們天真無邪的笑容,房麵裡到未來的模子…</p>
+        <p>APR 10 2024 </p>
+        <button class="view-details">View Details</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="news-details-overlay">
+    <div class="news-details">
+      <span class="close-btn">&times;</span>
+      <h3></h3>
+      <p></p>
+    </div>
+  </div>
+<script>
+  const newsItems = document.querySelectorAll('.news-item');
+const newsDetailsOverlay = document.querySelector('.news-details-overlay');
+const newsDetails = document.querySelector('.news-details');
+const closeBtn = document.querySelector('.close-btn');
+
+newsItems.forEach(item => {
+  item.addEventListener('click', () => {
+    const newsTitle = item.querySelector('h3').textContent;
+    const newsContent = item.querySelector('p').textContent;
+    newsDetails.querySelector('h3').textContent = newsTitle;
+    newsDetails.querySelector('p').textContent = newsContent;
+    newsDetailsOverlay.style.display = 'flex';
+  });
+});
+
+closeBtn.addEventListener('click', () => {
+  newsDetailsOverlay.style.display = 'none';
+});
+
+window.addEventListener('click', (event) => {
+  if (event.target === newsDetailsOverlay) {
+    newsDetailsOverlay.style.display = 'none';
+  }
+});
+</script>
+</body>
+</html>

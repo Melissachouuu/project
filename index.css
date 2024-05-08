@@ -3,18 +3,13 @@
         font-family: 微軟正黑體;
     }
     header {
-        background-color: #376C8A;
+        background-color: #F7F7F7;
         padding: 10px 0;
         text-align: center;
     }
     .navlist {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navlist-logo {
-        display: inline-block;
-        vertical-align: middle;
+        justify-content: space-between;
     }
     .navlist-logo img {
         aspect-ratio: 1/1;
@@ -30,95 +25,125 @@
         .navlist-btn ul li {
             display: inline-block;
             margin-left: 20px;
+            padding: 25px 0; /* 上下內邊距為高度的一半 */
+            box-sizing: border-box; /* 確保元素不會超出區塊高度 */
         }
         
         .navlist-btn ul li a {
             text-decoration: none;
-            color: #FFFFFF;
+            color: #C39595;
         }
         
         .navlist-btn li a:hover {
-            background-color: #DEBCBC;
+            cursor: pointer;
         }
         
-        /* banner */
-        .section-banner {
-            /* position: relative; */
-            height: 500px; 
-            background-image: url(bn.jpg);
-            background-size: cover;
-            /* width: 100%;  */
-        }
-        .section-banner .container {
-            height: 100%;
-            display: flex;
-            align-items: end;
-        }
-        /* 
-        .banner img {
-            width: 100%; 
-            height: 500px;
-            vertical-align: top;
-            object-fit: cover;  */
-        /* } */
-        .banner-slogan {
-            /* position: absolute;  */
-            /* top: 50%; 
-            left: 50%;  */
-            /* transform: translate(-50%,-50%);  */
-            color: #376C8A; 
-            left: 0;
-            bottom: 0;
-        }
-        
-        .banner-slogan h1 {
-            font-family: "Pacifico", sans-serif;
-            font-size: 48px;
-            line-height: 60px;
-            margin: 0;
-        }
-        
-        .banner-slogan h1:last-child {
-            font-size: 40px; 
-        }
-
-        /* 關於我們 */
-        .section-aboutus {
-            text-align: center;
-        }
-
-        .section-aboutus h2 {
-            margin: 20px;
-            font-size: 24px;
-            font-weight: bold;
-            color: #333333;
-        }
-        .row {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* margin: 20px 0; */
-        }
-        .card {
-            /* margin: 0 10px; */
-        }
-        .card img {
-            max-width: 100%;
-            height: auto;
-            aspect-ratio: 16/9;
-            width: 400px;
-        }
-        .card p {
-            margin: 5px;
-            text-align: left;
-            width: 100%;
-            line-height: 20px;
-        }
+/* banner */
+.section-banner {
+    height: 500px; 
+    background-image: url(bn-classroom.jpg);
+    background-size: cover;
+}
+.section-banner .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.banner-slogan {
+    color: #F0F5FF; 
+    left: 0;
+    bottom: 0;
+}
+.banner-slogan h1 {
+    font-family: "Pacifico", sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 60px;
+    margin: 50;
+}
+.banner-slogan h1:last-child {
+    font-size: 40px; 
+}
+/* 關於我們 */
+.section-aboutus {
+    text-align: center;
+}
+.section-aboutus .container h2 {
+    margin: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 60px; 
+}
+.card {
+/* margin: 0 10px; */
+background-image: url('blob.svg');
+background-repeat: no-repeat; /* 不重複 */
+    background-position: right bottom; /* 調整插圖位置 */
+    padding: 70px 40px; 適當的內邊距以防止文字被遮蓋
+    background-size: 250px 250px; 
+    /* 或者放大至200%大小 */
+    background-size: 100%; 
+}
+.aboutus-img img {
+    border: #333333  solid 5px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    width: 100px;
+}
+.card p {
+    margin: 5px;
+    text-align: left;
+    width: 300px;
+    line-height: 25px;
+}
+/* 教學理念 */
+.philosophy {
+    text-align: center;
+    font-weight: 10px;
+  }
+.philosophy img {
+    max-width: 300px;
+  }
+.section-teaching .philosophy .container {
+    position: relative;
+  }
+.bubble-container {
+    position: relative;
+  }
+.bubble {
+    background-color: rgba(242, 230, 224, 1);
+    border-radius: 10px;
+    padding: 20px; /* 增加內邊距以容納文字 */
+    position: relative;
+    margin-bottom: 300px; /* 調整對話框與上方元素之間的間距 */
+  }
+.bubble:before {
+    content: '';
+    position: absolute;
+    left: -20px; /* 將箭頭移動到對話框左側 */
+    bottom: 20px; /* 將箭頭移動到對話框底部 */
+    border-width: 20px 20px 0 0; /* 調整箭頭的尺寸和方向 */
+    border-style: solid;
+    border-color: rgba(242, 230, 224, 1) transparent transparent transparent; /* 設置箭頭的顏色 */
+    margin-right: 0px;
+    transform: rotate(-25deg); /* 旋轉箭頭 45 度 */
+  } 
+  .bubble p {
+    line-height: 25px;
+    text-align: left;
+  }
 /* 我們提供的服務 */
 .section-ourservice {
     padding: 50px 0;
 }
-.section-ourservice h2 {
+h2 {
     font-size: 24px;
     color: #333333;
     font-weight: bold;
@@ -170,14 +195,16 @@
     position: absolute;
     right: 0; /* 將按鈕靠右對齊 */
 }
+/* 插圖 */
+
 /* 選擇我們的理由 */
 .section-reason {
-    background-color: #F0F5FF;
+    background-color: rgba(242, 230, 224, 1);
     margin-bottom: 50px;
 }
 .section-reason .reason {
     width: 450px;
-    margin: 10px 0px;
+    margin: 5px 0px;
 }
 .section-reason h2 {
     font-size: 24px;
@@ -187,7 +214,8 @@
     padding: 20px;
 }
 .reason-img img {
-    width: 500px;
+    width: 350px;
+    border-radius: 10px;
 }
 .reason h3 {
     font-size:20px;
@@ -201,6 +229,10 @@
     text-indent: 3em;
     color: #646161;
     font-size: 16px;
+}
+.reason {
+    display: inline-block;
+    margin-left: 20px;
 }
 /* footer */
 .section-footer {
@@ -285,3 +317,170 @@
     height: 30px;
     margin-bottom: 5px;
   }
+/* 第二頁 最新消息 */
+最新消息
+.section-news {
+    padding: 50px 0;
+    max-width: 1200px;
+}
+.news{
+    width: 1440px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: start;
+}
+.section-news h2 {
+    font-size: 24px;
+    color: #333333;
+}
+.section-news .number {
+    background-color: #58656E;
+    border-radius: 0px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.section-news h3{
+    font-size: 20px;
+}
+.section-news .number p {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.news-txt p {
+    margin-top: 15px;
+    font-size:16px;
+}
+.news-txt p~p{
+   font-size: 13px;
+   padding: 0;
+}
+/* 開班資訊 */
+.swiper-top {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .swiper {
+    width: calc(100% - 30vw);
+    margin: auto;
+    /* height: 50vh; */
+  }
+  .swiper-slide {
+  }
+  .swiper-slide img {
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+  }
+  .swiper-pagination.swiper-pagination-1{
+    bottom: -2rem;
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  /* 學生榮譽榜 */
+  .section-award .container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+  }
+   h2{
+    font-size: 24px;
+    margin: 40px;
+    font-weight: bold;
+  }
+  .section-award .award-img {
+    margin: 20px;
+  }
+/* footer */
+.section-footer {
+  background-color: #376C8A;
+  color: #FFFFFF;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.nav-list li a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+.nav-list li {
+ display: inline-block;
+ margin: 20px;
+ padding: 10px;
+}
+.school-info p {
+  line-height: 30px;
+}
+/* 側邊按鈕 */
+.dm-btm {
+  background-color:#58656E;
+  padding: 5px;
+}
+.dm-icon a, .reserve-icon a {
+  text-decoration: none;
+  color: white;
+}
+.reserve-btm {
+  background-color:#FD6C3C;
+  padding: 5px;
+}
+/* 視窗滾動 */
+.floating-buttons {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.dm-btm, .reserve-btm {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dm-btm {
+  background-color: #58656E;
+}
+
+.reserve-btm {
+  background-color: #FD6C3C;
+}
+
+.dm-icon, .reserve-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.dm-icon img, .reserve-icon img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}

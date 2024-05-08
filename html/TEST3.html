@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.class-info {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.class-info h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.class-info-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.class-info-section {
+  flex: 1;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+}
+.section-title {
+  text-align: center;
+  margin-top: 0;
+}
+.class-info-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+.class-info-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.news-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-align: left;
+}
+.view-more {
+  background-color:lightcoral;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  /* text-align: center; */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.news-details-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.news-details {
+  background-color: white;
+  padding: 20px;
+  max-width: 800px;
+  width: 80%;
+  position: relative;
+}
+.news-details-content {
+  max-height: 60vh;
+  overflow-y: auto;
+  text-align: center;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+    <div class="class-info">
+        <h2>開班資訊</h2>
+        <div class="class-info-container">
+          <div class="class-info-section">
+            <h3 class="section-title">英文</h3>
+            <div class="class-info-list">
+              <div class="class-info-item">
+                <h4 class="news-title">暑期英文密集班即將開課</h4>
+                <p>暑期英文密集班即將開課,為期六週,協助學生們紮實掌握英文基礎。</p>
+                <button class="view-more">查看更多</button>
+              </div>
+              <div class="class-info-item">
+                <h4 class="news-title">英文能力測驗衝刺課程</h4>
+                <p>為備戰英文能力測驗,我們特別開設了一系列衝刺課程,歡迎報名!</p>
+                <button class="view-more">查看更多</button>
+              </div>
+              <!-- 更多消息項目 -->
+            </div>
+          </div>
+          <div class="class-info-section">
+            <h3 class="section-title">數學</h3>
+            <div class="class-info-list">
+              <div class="class-info-item">
+                <h4 class="news-title">數學基礎強化班</h4>
+                <p>數學基礎不穩?別擔心,我們的數學基礎強化班將為您紮實奠定基礎。</p>
+                <button class="view-more">查看更多</button>
+              </div>
+              <div class="class-info-item">
+                <h4 class="news-title">高中數學概念講座</h4>
+                <p>高中數學概念困擾您嗎?快來參加我們的高中數學概念講座吧!</p>
+                <button class="view-more">查看更多</button>
+              </div>
+              <!-- 更多消息項目 -->
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="news-details-overlay">
+        <div class="news-details">
+          <span class="close-btn">&times;</span>
+          <div class="news-details-content">
+            <h3></h3>
+            <p></p>
+            <img src="" alt="">
+            <a href="" target="_blank">查看連結</a>
+          </div>
+        </div>
+      </div>
+<script>
+        const viewMoreButtons = document.querySelectorAll('.view-more');
+        const newsDetailsOverlay = document.querySelector('.news-details-overlay');
+        const newsDetailsContent = document.querySelector('.news-details-content');
+        const closeBtn = document.querySelector('.close-btn');
+
+        viewMoreButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const newsTitle = button.parentElement.querySelector('.news-title').textContent;
+            const newsContent = button.parentElement.querySelector('p').textContent;
+            newsDetailsContent.querySelector('h3').textContent = newsTitle;
+            newsDetailsContent.querySelector('p').textContent = newsContent;
+            // 在這裡可以設置圖片和連結
+            newsDetailsContent.querySelector('img').src = 'path/to/your/image.jpg';
+            newsDetailsContent.querySelector('a').href = 'https://your-link.com';
+            newsDetailsOverlay.style.display = 'flex';
+        });
+        });
+
+        closeBtn.addEventListener('click', () => {
+        newsDetailsOverlay.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => {
+        if (event.target === newsDetailsOverlay) {
+            newsDetailsOverlay.style.display = 'none';
+        }
+        });
+</script>
+</body>
+</html>

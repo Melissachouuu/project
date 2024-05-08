@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.section-contactus {
+  background-color: #f9f6ef;
+  padding: 50px 0;
+}
+.section-contactus h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.contact-card {
+  background-color: #f8e8b9; /* 鵝黃色 */
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card-icon {
+  margin-bottom: 20px;
+}
+.card-icon img{
+    max-width: 30px;
+  max-height: 30px;
+}
+.card-text p {
+  margin: 5px 0;
+}
+</style>
+</head>
+<body>
+    <section class="section-contactus">
+        <div class="container">
+          <h2>聯絡我們</h2>
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="card-icon">
+                <img src="../phone.png" alt="icon-phone">
+              </div>
+              <div class="card-text">
+                <p>聯絡時間:一~五 12:00 ~ 22:00</p>
+                <p>電話號碼 (02)2297-6666</p>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="card-icon">
+                <img src="../email.png" alt="icon-email">
+              </div>
+              <div class="card-text">
+                <p>電子信箱</p>
+                <p>happy@dr.com.tw</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>

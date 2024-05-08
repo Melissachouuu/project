@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+  font-family: 微軟正黑體;
+}
+
+body {
+  background-color: #f9f6ef;
+}
+
+header {
+  background-color: #F7F7F7;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navlist-logo img {
+  aspect-ratio: 1/1;
+  width: 70px;
+}
+
+.navlist-btn ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navlist-btn ul li {
+  margin-left: 20px;
+  padding: 25px 0;
+  box-sizing: border-box;
+}
+
+.navlist-btn ul li a {
+  text-decoration: none;
+  color: #C39595;
+}
+
+.navlist-btn li a:hover {
+  cursor: pointer;
+}
+
+/* 手機版漢堡選單 */
+.menu-btn {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-btn span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #333;
+}
+
+#menu-switch ~ .navlist-btn ul {
+  display: none;
+}
+
+#menu-switch:checked ~ .navlist-btn ul {
+  display: block;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  background-color: #F7F7F7;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .navlist-btn ul {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="menu-switch">
+        <label for="menu-switch" class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav class="container">
+          <div class="navlist">
+            <div class="navlist-logo">
+              <img src="../Group 2.png" alt="website logo">
+            </div>
+            <div class="navlist-btn">
+              <ul>
+                <li><a href="second.html">最新消息</a></li>
+                <li><a href="forth.html">課程介紹</a></li>
+                <li><a href="fifth.html">師資介紹</a></li>
+                <li><a href="third.html">線上DM</a></li>
+                <li><a href="sixth.html">聯絡我們</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+</body>
+</html>

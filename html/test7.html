@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+  font-family: 微軟正黑體;
+}
+
+body {
+  background-color: #f9f6ef;
+  margin: 0;
+}
+
+header {
+  background-color: #333;
+}
+
+.navlist {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 20px;
+  height: 30px;
+}
+
+.navlist-logo img {
+  aspect-ratio: 1/1;
+  width: 70px;
+}
+
+.navlist-btn ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navlist-btn ul li {
+  margin-left: 20px;
+  position: relative;
+}
+
+.navlist-btn ul li a {
+  text-decoration: none;
+  color: #C39595;
+}
+
+.navlist-btn li a:hover {
+  cursor: pointer;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+  color: #C39595;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  left: 0; /* 新增這一行，將下拉菜單左對齊 */
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f1f1f1;
+}
+
+.navlist-btn li:hover .dropdown-menu {
+  display: block;
+}
+
+.navlist-btn li:hover .dropdown-toggle {
+  color: #fff; /* 新增這一行，當下拉菜單打開時，更改文字顏色 */
+}
+
+/* 新增以下樣式，當滑鼠移開時收合下拉菜單 */
+.navlist-btn li:not(:hover) .dropdown-menu {
+  display: none;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <input type="checkbox" name="" id="menu-switch">
+        <nav class="container">
+          <div class="navlist">
+            <div class="navlist-logo">
+              <a href="index.html"><img src="../Group 2.png" alt="website logo"></a>
+            </div>
+            <div class="navlist-btn">
+              <ul>
+                <li><a href="news.html">最新消息</a></li>
+                <li>
+                  <span class="dropdown-toggle">美語部</span>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">STEAM G綜合實驗課程(SG)</a></li>
+                    <li><a href="#">美式園小課程(AG)</a></li>
+                    <li><a href="#">旗艦美語G系列課程(G)</a></li>
+                    <li><a href="#">ESL青英美語課程(N)</a></li>
+                  </ul>
+                </li>
+                <li><a href="CoursesIntro.html">課程介紹</a></li>
+                <li><a href="#">師資介紹</a></li>
+                <li><a href="onlineDM.html">線上DM</a></li>
+                <li><a href="contactUs.html">聯絡我們</a></li>
+                <li><a href="#">分校資訊</a></li>
+                <li><a href="#">報名參觀</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+</body>
+</html>
